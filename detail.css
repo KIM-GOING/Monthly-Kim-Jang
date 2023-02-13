@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  height: 100%;
+  position: absolute;
+}
+
+.wrapper_nav {
+  background-color: #f7f7f5;
+  width: 240px;
+}
+
+.wrapper_nav_title {
+  height: 48px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.nav_title_icon {
+  height: 32px;
+  margin: 9px;
+}
+.wrapper_nav_ul > li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.wrapper_nav_ul > li:hover {
+  background-color: #ededeb;
+}
+.wrapper_nav_ul > li > a {
+  text-decoration-line: none;
+}
+
+.wrapper_nav_ul > li > a:link {
+  color: #37352f;
+}
+
+.wrapper_nav_ul > li > a:visited {
+  color: #37352f;
+}
+
+.wrapper_nav_ul > li > a:hover {
+  color: #ff9aa2;
+}
+
+.wrapper_nav_ul > li > a:active {
+  color: #ff9aa2;
+}
+
+#sidenav_1,
+#sidenav_2,
+#sidenav_3,
+#sidenav_4,
+#sidenav_5,
+#sidenav_6 {
+  padding-left: 20px;
+}
+
+.sidenav_frame_icon {
+  height: 30px;
+  width: 30px;
+}
+
+.sidenav_ko {
+  font-size: 12pt;
+}
+
+.sidenav_en {
+  font-size: 9pt;
+}
+
+.wrapper_content {
+  display: flex;
+  flex-direction: column;
+  width: calc(100vw - 240px);
+  /* calc()에서 +, - 기호 사용할 때는 항상 양 옆에 공백이 있어야 함 */
+}
+.wrapper_content_nav {
+  height: 48px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+}
+
+.content_nav_icon {
+  width: 30px;
+  height: 30px;
+  margin: 9px;
+  padding: 0;
+}
+
+.content_nav_title {
+  font-size: 12pt;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper_content_content {
+  flex: 1;
+  overflow-y: scroll;
+}
+
+.wrapper_content_content::-webkit-scrollbar {
+  display: none;
+}
+
+.wrapper_content_footer {
+  height: 40px;
+  background-color: white;
+}
