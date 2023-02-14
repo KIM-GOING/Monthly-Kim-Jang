@@ -139,6 +139,34 @@
   display: none;
 }
 
+.content_background {
+  background-color: #ff9aa2;
+  height: 180px;
+}
+
+.content_wrapper {
+  margin: 15px;
+}
+
+.wrapper_title {
+}
+
+.wrapper_title_icon {
+  width: 40px;
+}
+
+.wrapper_title_ko {
+  font-size: 28px;
+}
+
+.wrapper_title_en {
+  font-size: 18px;
+}
+
+.content_wrapper_caption {
+  background-color: #ededeb;
+}
+
 .wrapper_content_footer {
   height: 40px;
   background-color: white;
