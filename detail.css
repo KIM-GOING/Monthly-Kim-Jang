@@ -145,7 +145,7 @@
 }
 
 .content_wrapper {
-  margin: 15px;
+  margin: 30px;
 }
 
 .wrapper_title {
@@ -161,10 +161,20 @@
 
 .wrapper_title_en {
   font-size: 18px;
+  padding-bottom: 10px;
 }
 
 .content_wrapper_caption {
   background-color: #ededeb;
+}
+
+.content_wrapper_p {
+  padding: 20px;
+}
+
+.content_wrapper_details {
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 .wrapper_content_footer {
