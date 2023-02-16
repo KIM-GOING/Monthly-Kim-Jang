@@ -65,10 +65,20 @@ body {
     position: absolute;
     left: 30%;
 
-    width: 60%;
+    width: 70%;
     height: 100%;
 
-    background-color: rgba(255,255,255,0.9);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4), white);
+}
+
+.monthly-content-gradient {
+    position: absolute;
+    left: 30%;
+
+    width: 70%;
+    height: 100%;
+
+    background-image: linear-gradient(90deg, white, rgba(255, 255, 255, 0.4));
 }
 
 .wrapper-line {
@@ -79,6 +89,12 @@ body {
 
     background-color: white;
 
+    display: table;
+}
+
+.line {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .wrapper-kimjang {
@@ -100,10 +116,20 @@ body {
 
 .kimjang-content {
     position: absolute;
-    left: 10%;
+    left: 0%;
 
-    width: 60%;
+    width: 70%;
     height: 100%;
 
-    background-color: rgba(255,255,255,0.9);
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.4), white);
+}
+
+.kimjang-content-gradient {
+    position: absolute;
+    left: 0%;
+
+    width: 70%;
+    height: 100%;
+
+    background-image: linear-gradient(white, rgba(255, 255, 255, 0.4));
 }
