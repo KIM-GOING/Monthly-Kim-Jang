@@ -6,14 +6,14 @@
 body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .wrapper {
     width:100vw;
     height:100vh;
 
-    
-    background-image: url('https://i.imgur.com/DlcuWzx.jpg');
+    background-image: url(img_main/spring.jpg);
     background-size: cover;
     background-position: center center;
 }
@@ -35,16 +35,6 @@ body {
     background-color: white;
 }
 
-.rmargin {
-    position: absolute;
-    right: 0%;
-
-    width: 10%;
-    height: 100%;
-
-    background-color: white;
-}
-
 .monthly-name {
     position: absolute;
     left: 10%;
@@ -53,12 +43,15 @@ body {
     height: 100%;
 
     background-color: white;
+
+    display: flex;
+    justify-content: center;
 }
 
-.font-align {
-    font-family: 'titlefont';
-    font-size: 1000%;
-    color: rgb(220, 220, 220);
+.flex-name {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 10px;
 }
 
 .monthly-content {
@@ -92,11 +85,6 @@ body {
     display: table;
 }
 
-.line {
-    display: table-cell;
-    vertical-align: middle;
-}
-
 .wrapper-kimjang {
     position: relative;
 
@@ -112,6 +100,9 @@ body {
     height: 100%;
 
     background-color: white;
+
+    display: flex;
+    justify-content: center;
 }
 
 .kimjang-content {
@@ -132,4 +123,14 @@ body {
     height: 100%;
 
     background-image: linear-gradient(white, rgba(255, 255, 255, 0.4));
+}
+
+.rmargin {
+    position: absolute;
+    right: 0%;
+
+    width: 10%;
+    height: 100%;
+
+    background-color: white;
 }
