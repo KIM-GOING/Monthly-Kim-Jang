@@ -9,13 +9,26 @@
   </head>
   <body>
     <div class="wrapper">
+      <!-- 왼쪽 내비게이션 바와 오른쪽 콘텐츠 부분을 div 영역으로 각각 지정함 -->
+      <!-- 왼쪽 영역 -->
       <div class="wrapper_nav">
+        <!-- 내비게이션 제목 로고 -->
         <div class="wrapper_nav_title">
           <a href="main.html">
             <img class="nav_title_icon" src="img_detail/logo.png" alt="LOGO" />
           </a>
         </div>
+        <!-- 내비게이션 접기 버튼 -->
+        <div id="wrapper_nav_button" onclick="">
+          <img
+            id="sidenav_button_icon"
+            src="img_detail/menu-bar.png"
+            alt="Menu"
+          />
+        </div>
+        <!-- 내비게이션 ul li  -->
         <ul class="wrapper_nav_ul">
+          <!-- 참고 자료 소개 -->
           <li class="sidenav">
             <a href="#content_wrapper_1">
               <span class="sidenav_frame">
@@ -31,6 +44,7 @@
               </span>
             </a>
           </li>
+          <!-- 참고 자료 피드백 -->
           <li class="sidenav">
             <a href="#content_wrapper_2">
               <div class="sidenav_frame">
@@ -46,6 +60,7 @@
               </span>
             </a>
           </li>
+          <!-- 프로토타입 -->
           <li class="sidenav">
             <a href="#content_wrapper_3">
               <div class="sidenav_frame">
@@ -61,6 +76,7 @@
               </span>
             </a>
           </li>
+          <!-- 개발 노트 -->
           <li class="sidenav">
             <a href="#content_wrapper_4">
               <div class="sidenav_frame">
@@ -76,6 +92,7 @@
               </span>
             </a>
           </li>
+          <!-- 직접 사용해보세요! -->
           <li class="sidenav">
             <a href="#content_wrapper_5">
               <div class="sidenav_frame">
@@ -91,56 +108,61 @@
               </span>
             </a>
           </li>
-          <div id="sidenav_blank"></div>
-          <li id="sidenav_6">
-            <div class="sidenav_sns">
-              <div class="sidenav_sns_frame">
-                <a
-                  href="https://www.instagram.com/kim._.going/"
-                  target="_blank"
-                  title="하빈의 인스타그램"
-                >
-                  <img
-                    class="sidenav_sns_icon"
-                    src="img_detail/instagram.png"
-                    alt="@kim._.going"
-                  />
-                  <div class="sidenav_sns_text">@kim._.going</div>
-                </a>
-              </div>
-              <div class="sidenav_sns_frame">
-                <a
-                  href="https://www.instagram.com/foryxxng/"
-                  target="_blank"
-                  title="우영의 인스타그램"
-                >
-                  <img
-                    class="sidenav_sns_icon"
-                    src="img_detail/instagram.png"
-                    alt="@foryxxng"
-                  />
-                  <div class="sidenav_sns_text">@foryxxng</div>
-                </a>
-              </div>
-              <div class="sidenav_sns_frame">
-                <a
-                  href="https://github.com/KIM-GOING/Monthly-Kim-Jang"
-                  target="_blank"
-                  title="月間金張 GITHUB 바로가기"
-                >
-                  <img
-                    class="sidenav_sns_icon"
-                    src="img_detail/github.png"
-                    alt="MonthlyKJ-github"
-                  />
-                  <div class="sidenav_sns_text">GITHUB</div>
-                </a>
-              </div>
-            </div>
-          </li>
         </ul>
+        <!-- li 태그와 SNS 사이에 공간을 만들고
+          내비게이션 SNS 전체를 footer 처럼 붙이고 싶은 상황 -->
+        <!-- 내비게이션 SNS -->
+        <div class="sidenav_sns">
+          <!-- 하빈의 인스타그램 -->
+          <div class="sidenav_sns_frame">
+            <a
+              href="https://www.instagram.com/kim._.going/"
+              target="_blank"
+              title="하빈의 인스타그램"
+            >
+              <img
+                class="sidenav_sns_icon"
+                src="img_detail/instagram.png"
+                alt="@kim._.going"
+              />
+              <div class="sidenav_sns_text">@kim._.going</div>
+            </a>
+          </div>
+          <!-- 우영의 인스타그램 -->
+          <div class="sidenav_sns_frame">
+            <a
+              href="https://www.instagram.com/foryxxng/"
+              target="_blank"
+              title="우영의 인스타그램"
+            >
+              <img
+                class="sidenav_sns_icon"
+                src="img_detail/instagram.png"
+                alt="@foryxxng"
+              />
+              <div class="sidenav_sns_text">@foryxxng</div>
+            </a>
+          </div>
+          <!-- 월간김장 깃허브 -->
+          <div class="sidenav_sns_frame">
+            <a
+              href="https://github.com/KIM-GOING/Monthly-Kim-Jang"
+              target="_blank"
+              title="月間金張 GITHUB 바로가기"
+            >
+              <img
+                class="sidenav_sns_icon"
+                src="img_detail/github.png"
+                alt="MonthlyKJ-github"
+              />
+              <div class="sidenav_sns_text">GITHUB</div>
+            </a>
+          </div>
+        </div>
       </div>
+      <!-- 오른쪽 영역 -->
       <div class="wrapper_content">
+        <!-- 콘텐츠 영역의 제목 부분 -->
         <div class="wrapper_content_nav">
           <img
             class="content_nav_icon"
@@ -151,8 +173,10 @@
             ><strong>2023.02. 포트폴리오 사이트 제작하기</strong></span
           >
         </div>
+        <!-- 실제 내용이 보여지는 부분 -->
         <div class="wrapper_content_content">
           <div class="content_background"></div>
+          <!-- 참고 자료 소개 -->
           <div class="content_wrapper" id="content_wrapper_1">
             <div class="content_wrapper_title">
               <img
@@ -183,7 +207,10 @@
               with desktop publishing software like Aldus PageMaker including
               versions of Lorem Ipsum.
             </div>
+            <br />
+            <hr class="division" />
           </div>
+          <!-- 참고 자료 피드백 -->
           <div class="content_wrapper" id="content_wrapper_2">
             <div class="content_wrapper_title">
               <img
@@ -214,7 +241,10 @@
               with desktop publishing software like Aldus PageMaker including
               versions of Lorem Ipsum.
             </div>
+            <br />
+            <hr class="division" />
           </div>
+          <!-- 프로토타입 -->
           <div class="content_wrapper" id="content_wrapper_3">
             <div class="content_wrapper_title">
               <img
@@ -245,7 +275,10 @@
               with desktop publishing software like Aldus PageMaker including
               versions of Lorem Ipsum.
             </div>
+            <br />
+            <hr class="division" />
           </div>
+          <!-- 개발 노트 -->
           <div class="content_wrapper" id="content_wrapper_4">
             <div class="content_wrapper_title">
               <img
@@ -276,7 +309,10 @@
               with desktop publishing software like Aldus PageMaker including
               versions of Lorem Ipsum.
             </div>
+            <br />
+            <hr class="division" />
           </div>
+          <!-- 직접 사용해보세요! -->
           <div class="content_wrapper" id="content_wrapper_5">
             <div class="content_wrapper_title">
               <img
@@ -309,6 +345,7 @@
             </div>
           </div>
         </div>
+        <!-- footer 영역 -->
         <div class="wrapper_content_footer"></div>
       </div>
     </div>

@@ -15,6 +15,8 @@
 .wrapper_nav {
   background-color: #f7f7f5;
   width: 240px;
+  display: flex;
+  flex-direction: column;
 }
 
 .wrapper_nav_title {
@@ -24,10 +26,23 @@
   align-items: center;
 }
 
+#wrapper_nav_button {
+  display: flex;
+  justify-content: end;
+}
+
+#sidenav_button_icon:hover {
+  opacity: 0.3;
+}
+#sidenav_button_icon {
+  height: 30px;
+  margin: 5px;
+}
 .nav_title_icon {
   height: 32px;
   margin: 9px;
 }
+
 .wrapper_nav_ul > li {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -90,6 +105,7 @@
 .sidenav_sns_frame > a {
   text-align: center;
 }
+
 .sidenav_sns_frame:hover {
   background-color: #ededeb;
 }
@@ -148,7 +164,10 @@
   margin: 30px;
 }
 
-.wrapper_title {
+.division {
+  background-color: lightgrey;
+  border: 0;
+  height: 1px;
 }
 
 .wrapper_title_icon {
@@ -162,6 +181,7 @@
 .wrapper_title_en {
   font-size: 18px;
   padding-bottom: 10px;
+  color: lightgray;
 }
 
 .content_wrapper_caption {
