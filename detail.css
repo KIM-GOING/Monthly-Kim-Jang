@@ -12,12 +12,18 @@
   position: absolute;
 }
 
+/* 내비게이션 바 */
+
 .wrapper_nav {
   background-color: #f7f7f5;
-  width: 240px;
+  width: 16vw;
+  min-width: 140px;
+
   display: flex;
   flex-direction: column;
 }
+
+/* 내비게이션 제목 로고 */
 
 .wrapper_nav_title {
   height: 48px;
@@ -25,6 +31,15 @@
   display: flex;
   align-items: center;
 }
+
+/* 내비게이션 제목 아이콘 */
+
+.nav_title_icon {
+  height: 32px;
+  margin: 9px;
+}
+
+/* 내비게이션 접기 버튼 */
 
 #wrapper_nav_button {
   display: flex;
@@ -34,42 +49,42 @@
 #sidenav_button_icon:hover {
   opacity: 0.3;
 }
+
 #sidenav_button_icon {
   height: 30px;
   margin: 5px;
 }
-.nav_title_icon {
-  height: 32px;
-  margin: 9px;
-}
+
+/* 내비게이션 ul */
 
 .wrapper_nav_ul > li {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-
-.wrapper_nav_ul > .sidenav:hover {
-  background-color: #ededeb;
-}
 .wrapper_nav_ul > .sidenav > a {
   text-decoration-line: none;
 }
+.wrapper_nav_ul > .sidenav:hover {
+  background-color: #ededeb;
+}
 
-.wrapper_nav_ul > .sidenav > a:link {
+.wrapper_nav_ul > .sidenav :link {
   color: #37352f;
 }
 
-.wrapper_nav_ul > .sidenav > a:visited {
+.wrapper_nav_ul > .sidenav:visited {
   color: #37352f;
 }
 
-.wrapper_nav_ul > .sidenav > a:hover {
+.wrapper_nav_ul > .sidenav :hover {
   color: #ff9aa2;
 }
 
-.wrapper_nav_ul > .sidenav > a:active {
+.wrapper_nav_ul > .sidenav :active {
   color: #ff9aa2;
 }
+
+/* 내비게이션 li */
 
 .sidenav {
   padding-left: 20px;
@@ -81,6 +96,10 @@
   width: 30px;
 }
 
+.sidenav_frame_icon.hover {
+  opacity: 0.3;
+}
+
 .sidenav_ko {
   font-size: 12pt;
 }
@@ -88,6 +107,12 @@
 .sidenav_en {
   font-size: 9pt;
 }
+/* 내비게이션 blank */
+
+.sidenav_blank {
+  flex: 1;
+}
+/* 내비게이션 sns */
 
 .sidenav_sns {
   display: flex;
@@ -104,6 +129,8 @@
 
 .sidenav_sns_frame > a {
   text-align: center;
+  text-decoration: none;
+  color: #37352f;
 }
 
 .sidenav_sns_frame:hover {
@@ -114,17 +141,12 @@
   font-size: 8px;
 }
 
-.sidenav_sns_frame > a {
-  text-decoration: none;
-  color: #37352f;
-}
-
 .wrapper_content {
   display: flex;
   flex-direction: column;
-  width: calc(100vw - 240px);
-  /* calc()에서 +, - 기호 사용할 때는 항상 양 옆에 공백이 있어야 함 */
+  width: 84vw;
 }
+
 .wrapper_content_nav {
   height: 48px;
   background-color: #ffffff;
@@ -145,6 +167,8 @@
   display: flex;
   align-items: center;
 }
+
+/* 오른쪽 영역 content */
 
 .wrapper_content_content {
   flex: 1;
@@ -197,7 +221,52 @@
   padding-bottom: 20px;
 }
 
+/* footer */
+
 .wrapper_content_footer {
   height: 40px;
   background-color: white;
+}
+
+/* ========== 미디어쿼리 ========== */
+
+@media screen and (max-width: 875px) {
+  .wrapper_content {
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw - 140px);
+    /* calc()에서 +, - 기호 사용할 때는 항상 양 옆에 공백이 있어야 함 */
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .sidenav_en,
+  .sidenav_sns_text {
+    display: none;
+  }
+}
+
+/* ========== 내비게이션 접혔을 때 ========== */
+
+.wrapper_nav.fold {
+  margin: 0;
+  padding: 0;
+  width: 70px;
+  min-width: 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav_title_icon.fold,
+.sidenav_sns.fold,
+.sidenav_lang.fold,
+.sidenav_blank.fold {
+  display: none;
+}
+
+.wrapper_content.fold {
+  display: flex;
+  flex-direction: column;
+  width: calc(100vw - 70px);
+  /* calc()에서 +, - 기호 사용할 때는 항상 양 옆에 공백이 있어야 함 */
 }

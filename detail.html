@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,7 +19,7 @@
           </a>
         </div>
         <!-- 내비게이션 접기 버튼 -->
-        <div id="wrapper_nav_button" onclick="">
+        <div id="wrapper_nav_button" onclick="sideNavFolding()">
           <img
             id="sidenav_button_icon"
             src="img_detail/menu-bar.png"
@@ -28,44 +28,47 @@
         </div>
         <!-- 내비게이션 ul li  -->
         <ul class="wrapper_nav_ul">
-          <!-- 참고 자료 소개 -->
-          <li class="sidenav">
+          <!-- 레퍼런스 소개 -->
+          <li class="sidenav" id="sidenav_1">
             <a href="#content_wrapper_1">
               <span class="sidenav_frame">
                 <img
                   class="sidenav_frame_icon"
+                  id="sidenav_frame_icon_1"
                   src="img_detail/presentation.png"
                   alt="Introduction to Reference"
                 />
               </span>
               <span class="sidenav_lang">
-                <div class="sidenav_ko">참고 자료 소개</div>
+                <div class="sidenav_ko">레퍼런스 소개</div>
                 <div class="sidenav_en">Introduction to references</div>
               </span>
             </a>
           </li>
-          <!-- 참고 자료 피드백 -->
-          <li class="sidenav">
+          <!-- 피드백 -->
+          <li class="sidenav" id="sidenav_2">
             <a href="#content_wrapper_2">
               <div class="sidenav_frame">
                 <img
                   class="sidenav_frame_icon"
+                  id="sidenav_frame_icon_2"
                   src="img_detail/feedback.png"
                   alt="Reference Feedback"
                 />
               </div>
               <span class="sidenav_lang">
-                <div class="sidenav_ko">참고 자료 피드백</div>
+                <div class="sidenav_ko">피드백</div>
                 <div class="sidenav_en">Reference Feedback</div>
               </span>
             </a>
           </li>
           <!-- 프로토타입 -->
-          <li class="sidenav">
+          <li class="sidenav" id="sidenav_3">
             <a href="#content_wrapper_3">
               <div class="sidenav_frame">
                 <img
                   class="sidenav_frame_icon"
+                  id="sidenav_frame_icon_3"
                   src="img_detail/dimensions.png"
                   alt="Prototype"
                 />
@@ -77,11 +80,12 @@
             </a>
           </li>
           <!-- 개발 노트 -->
-          <li class="sidenav">
+          <li class="sidenav" id="sidenav_4">
             <a href="#content_wrapper_4">
               <div class="sidenav_frame">
                 <img
                   class="sidenav_frame_icon"
+                  id="sidenav_frame_icon_4"
                   src="img_detail/idea.png"
                   alt="Developers' Tips"
                 />
@@ -92,25 +96,26 @@
               </span>
             </a>
           </li>
-          <!-- 직접 사용해보세요! -->
-          <li class="sidenav">
+          <!-- 체험하기 -->
+          <li class="sidenav" id="sidenav_5">
             <a href="#content_wrapper_5">
               <div class="sidenav_frame">
                 <img
                   class="sidenav_frame_icon"
+                  id="sidenav_frame_icon_5"
                   src="img_detail/user-experience.png"
                   alt="Try it!"
                 />
               </div>
               <span class="sidenav_lang">
-                <div class="sidenav_ko">직접 사용해보세요!</div>
+                <div class="sidenav_ko">체험하기</div>
                 <div class="sidenav_en">Try it!</div>
               </span>
             </a>
           </li>
         </ul>
-        <!-- li 태그와 SNS 사이에 공간을 만들고
-          내비게이션 SNS 전체를 footer 처럼 붙이고 싶은 상황 -->
+        <div class="sidenav_blank"></div>
+
         <!-- 내비게이션 SNS -->
         <div class="sidenav_sns">
           <!-- 하빈의 인스타그램 -->
@@ -122,10 +127,13 @@
             >
               <img
                 class="sidenav_sns_icon"
+                id="sidenav_sns_icon_1"
                 src="img_detail/instagram.png"
                 alt="@kim._.going"
               />
-              <div class="sidenav_sns_text">@kim._.going</div>
+              <div class="sidenav_sns_text" id="sidenav_sns_text_1">
+                @kim._.going
+              </div>
             </a>
           </div>
           <!-- 우영의 인스타그램 -->
@@ -137,10 +145,13 @@
             >
               <img
                 class="sidenav_sns_icon"
+                id="sidenav_sns_icon_2"
                 src="img_detail/instagram.png"
                 alt="@foryxxng"
               />
-              <div class="sidenav_sns_text">@foryxxng</div>
+              <div class="sidenav_sns_text" id="sidenav_sns_text_2">
+                @foryxxng
+              </div>
             </a>
           </div>
           <!-- 월간김장 깃허브 -->
@@ -152,10 +163,11 @@
             >
               <img
                 class="sidenav_sns_icon"
+                id="sidenav_sns_icon_3"
                 src="img_detail/github.png"
                 alt="MonthlyKJ-github"
               />
-              <div class="sidenav_sns_text">GITHUB</div>
+              <div class="sidenav_sns_text" id="sidenav_sns_text_3">GITHUB</div>
             </a>
           </div>
         </div>
@@ -185,7 +197,7 @@
                 alt="Introduction to Reference"
               />
               <div class="wrapper_title_ko">
-                <strong> 참고 자료 소개 </strong>
+                <strong> 레퍼런스 소개 </strong>
               </div>
               <div class="wrapper_title_en">Introduction to Reference</div>
             </div>
@@ -219,7 +231,7 @@
                 alt="Reference Feedback"
               />
               <div class="wrapper_title_ko">
-                <strong> 참고 자료 피드백 </strong>
+                <strong> 피드백 </strong>
               </div>
               <div class="wrapper_title_en">Reference Feedback</div>
             </div>
@@ -321,7 +333,7 @@
                 alt="Try it!"
               />
               <div class="wrapper_title_ko">
-                <strong> 직접 사용해보세요! </strong>
+                <strong> 체험하기 </strong>
               </div>
               <div class="wrapper_title_en">Try it!</div>
             </div>
