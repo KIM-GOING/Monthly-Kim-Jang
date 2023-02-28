@@ -13,7 +13,7 @@ body {
     width:100vw;
     height:100vh;
 
-    background-image: url(img_main/spring.jpg);
+    background-image: url(img_main/spring2.jpg);
     background-size: cover;
     background-position: center center;
 }
@@ -43,35 +43,92 @@ body {
     height: 100%;
 
     background-color: white;
+}
+
+.flex-monthly-name {
+    position: absolute;
+    left: 10%;
+
+    width: 20%;
+    height: 100%;
 
     display: flex;
     justify-content: center;
 }
 
-.flex-monthly-name {
+.flex-monthly-gray-name {
     max-width: 100%;
     max-height: 100%;
     padding: 10px;
 }
 
-.monthly-content {
-    position: absolute;
-    left: 30%;
+.flex-monthly-season-name {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 10px;
 
-    width: 70%;
-    height: 100%;
-
-    background-image: linear-gradient(rgba(255, 255, 255, 0.4), white);
+    opacity: 0;
 }
 
-.monthly-content-gradient {
+.monthly-content-gradient1 {
     position: absolute;
     left: 30%;
 
     width: 70%;
     height: 100%;
 
-    background-image: linear-gradient(90deg, white, rgba(255, 255, 255, 0.4));
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), white);
+}
+
+.monthly-content-gradient2 {
+    position: absolute;
+    left: 30%;
+
+    width: 70%;
+    height: 100%;
+
+    background-image: linear-gradient(90deg, white, rgba(255, 255, 255, 0.3));
+}
+
+.monthly-contents {
+    position: absolute;
+    left: 30%;
+
+    padding-left: 5%;
+    padding-right: 10%;
+    width: 55%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    visibility: hidden;
+    opacity: 0;
+}
+
+.monthly-content {
+    flex: 9;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'titlefont';
+    font-size: 40px;
+    color: rgb(70, 70, 70);
+}
+
+.monthly-detail {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    font-family: 'titlefont';
+    font-size: 20px;
+    color: #FF9AA2;
 }
 
 .wrapper-line {
@@ -95,6 +152,11 @@ body {
     align-items: center;
 }
 
+.blossom {
+    width: 30px;
+    height: 30px;
+}
+
 .circle {
     width: 15px;
     height: 15px;
@@ -107,6 +169,67 @@ body {
 
     width: 100%;
     height: 45%;
+}
+
+.kimjang-content-gradient1 {
+    position: absolute;
+    left: 0%;
+
+    width: 70%;
+    height: 100%;
+
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.3), white);
+}
+
+.kimjang-content-gradient2 {
+    position: absolute;
+    left: 0%;
+
+    width: 70%;
+    height: 100%;
+
+    background-image: linear-gradient(white, rgba(255, 255, 255, 0.3));
+}
+
+.kimjang-contents {
+    position: absolute;
+    left:0%;
+
+    padding-left: 10%;
+    padding-right: 5%;
+    width:55%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    visibility: hidden;
+    opacity: 0;
+}
+
+.kimjang-content {
+    flex: 8;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'titlefont';
+    font-size: 40px;
+    color: rgb(70, 70, 70);
+}
+
+.kimjang-detail {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    font-family: 'titlefont';
+    font-size: 20px;
+    color: #FF9AA2;
 }
 
 .kimjang-name {
@@ -128,26 +251,6 @@ body {
     padding: 10px;
 }
 
-.kimjang-content {
-    position: absolute;
-    left: 0%;
-
-    width: 70%;
-    height: 100%;
-
-    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.4), white);
-}
-
-.kimjang-content-gradient {
-    position: absolute;
-    left: 0%;
-
-    width: 70%;
-    height: 100%;
-
-    background-image: linear-gradient(white, rgba(255, 255, 255, 0.4));
-}
-
 .rmargin {
     position: absolute;
     right: 0%;
@@ -156,4 +259,8 @@ body {
     height: 100%;
 
     background-color: white;
+}
+
+.column-padding {
+    flex: 1;
 }
