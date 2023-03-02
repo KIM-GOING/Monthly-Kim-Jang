@@ -1,11 +1,21 @@
-function HoverOn() {
+function HoverOnM() {
     document.getElementsByClassName("flex-monthly-season-name")[0].style.opacity="1";
     document.getElementsByClassName("flex-monthly-season-name")[0].style.transition="all 0.25s";
 }
-function HoverOff() {
-    if(document.getElementsByClassName("monthly-contents")[12].style.visibility==='hidden') {
+function HoverOffM() {
+    if(document.getElementsByClassName("monthly-contents")[12].style.visibility==="hidden") {
         document.getElementsByClassName("flex-monthly-season-name")[0].style.opacity="0";
         document.getElementsByClassName("flex-monthly-season-name")[0].style.transition="all 0.25s";
+    }
+}
+function HoverOnK() {
+    document.getElementsByClassName("flex-kimjang-season-name")[0].style.opacity="1";
+    document.getElementsByClassName("flex-kimjang-season-name")[0].style.transition="all 0.25s";
+}
+function HoverOffK() {
+    if(document.getElementsByClassName("kimjang-contents")[13].style.visibility==='hidden') {
+        document.getElementsByClassName("flex-kimjang-season-name")[0].style.opacity="0";
+        document.getElementsByClassName("flex-kimjang-season-name")[0].style.transition="all 0.25s";
     }
 }
 

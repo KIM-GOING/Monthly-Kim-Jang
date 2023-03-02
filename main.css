@@ -3,6 +3,11 @@
     src: url(img_main/NanumMyeongjoExtraBold.otf);
 }
 
+@font-face {
+    font-family: 'contentfont';
+    src: url(img_main/NanumMyeongjo.otf);
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -107,15 +112,33 @@ body {
 }
 
 .monthly-content {
+    padding-left: 10%;
+    padding-right: 10%;
+
     flex: 9;
 
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 
     font-family: 'titlefont';
     font-size: 40px;
     color: rgb(70, 70, 70);
+}
+
+.content {
+    align-self: flex-start;
+    font-family: 'contentfont';
+    font-size: 20px;
+    color: rgb(100, 100, 100);
+    line-height: 150%;
+    text-align: justify;
+    text-indent: 13px;
+}
+
+.content-padding {
+    height: 10px;
 }
 
 .monthly-detail {
@@ -208,11 +231,15 @@ body {
 }
 
 .kimjang-content {
+    padding-left: 10%;
+    padding-right: 10%;
+
     flex: 8;
 
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 
     font-family: 'titlefont';
     font-size: 40px;
@@ -240,15 +267,31 @@ body {
     height: 100%;
 
     background-color: white;
+}
+
+.flex-kimjang-name {
+    position: absolute;
+    left: 70%;
+
+    width: 20%;
+    height: 100%;
 
     display: flex;
     justify-content: center;
 }
 
-.flex-kimjang-name {
+.flex-kimjang-gray-name {
     max-width: 100%;
     max-height: 100%;
     padding: 10px;
+}
+
+.flex-kimjang-season-name {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 10px;
+
+    opacity: 0;
 }
 
 .rmargin {
