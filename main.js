@@ -3,7 +3,7 @@ function HoverOnM() {
     document.getElementsByClassName("flex-monthly-season-name")[0].style.transition="all 0.25s";
 }
 function HoverOffM() {
-    if(document.getElementsByClassName("monthly-contents")[12].style.visibility==='hidden') {
+    if(document.getElementsByClassName("monthly-contents")[12].style.visibility==="hidden") {
         document.getElementsByClassName("flex-monthly-season-name")[0].style.opacity="0";
         document.getElementsByClassName("flex-monthly-season-name")[0].style.transition="all 0.25s";
     }

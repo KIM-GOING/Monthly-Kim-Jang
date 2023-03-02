@@ -3,6 +3,11 @@
     src: url(img_main/NanumMyeongjoExtraBold.otf);
 }
 
+@font-face {
+    font-family: 'contentfont';
+    src: url(img_main/NanumMyeongjo.otf);
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -107,15 +112,33 @@ body {
 }
 
 .monthly-content {
+    padding-left: 10%;
+    padding-right: 10%;
+
     flex: 9;
 
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 
     font-family: 'titlefont';
     font-size: 40px;
     color: rgb(70, 70, 70);
+}
+
+.content {
+    align-self: flex-start;
+    font-family: 'contentfont';
+    font-size: 20px;
+    color: rgb(100, 100, 100);
+    line-height: 150%;
+    text-align: justify;
+    text-indent: 13px;
+}
+
+.content-padding {
+    height: 10px;
 }
 
 .monthly-detail {
@@ -208,11 +231,15 @@ body {
 }
 
 .kimjang-content {
+    padding-left: 10%;
+    padding-right: 10%;
+
     flex: 8;
 
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 
     font-family: 'titlefont';
     font-size: 40px;
