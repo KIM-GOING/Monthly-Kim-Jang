@@ -29,8 +29,8 @@
                     src="img_main/monthly_spring_edit.png"
                     alt="월간"
 
-                    onmouseover="HoverOn()"
-                    onmouseout="HoverOff()"
+                    onmouseover="HoverOnM()"
+                    onmouseout="HoverOffM()"
                     onclick="Fade(this.id)"
                 >
             </div>
@@ -247,15 +247,23 @@
                 <div class="kimjang-detail"></div>
                 <div class="column-padding"></div>
             </div>
-            <div class="kimjang-name">
+            <div class="kimjang-name"></div>
+            <div class="flex-kimjang-name">
                 <img
-                    id="13"
-                    class="flex-kimjang-name"
+                    class="flex-kimjang-gray-name"
                     src="img_main/kimjang_gray_edit.png"
                     alt="김장"
+                >
+            </div>
+            <div class="flex-kimjang-name">
+                <img
+                    id="13"
+                    class="flex-kimjang-season-name"
+                    src="img_main/kimjang_spring_edit.png"
+                    alt="김장"
 
-                    onmouseover="this.src='img_main/kimjang_spring_edit.png'"
-                    onmouseout="this.src='img_main/kimjang_gray_edit.png'"
+                    onmouseover="HoverOnK()"
+                    onmouseout="HoverOffK()"
                     onclick="Fade(this.id)"
                 >
             </div>
