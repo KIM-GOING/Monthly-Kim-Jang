@@ -57,31 +57,30 @@
 
 /* 내비게이션 ul */
 
-.wrapper_nav_ul > li {
+.sidenav {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.wrapper_nav_ul > .sidenav > a {
+.sidenav > a {
   text-decoration-line: none;
 }
-.wrapper_nav_ul > .sidenav:hover {
+.sidenav:hover {
   background-color: #ededeb;
+  transition: all 0.5s;
 }
 
-.wrapper_nav_ul > .sidenav :link {
+.sidenav :link,
+.sidenav :visited {
   color: #37352f;
 }
 
-.wrapper_nav_ul > .sidenav:visited {
-  color: #37352f;
-}
-
-.wrapper_nav_ul > .sidenav :hover {
+.sidenav :hover,
+.sidenav :active {
   color: #ff9aa2;
+  transition: all 0.15s;
 }
-
-.wrapper_nav_ul > .sidenav :active {
-  color: #ff9aa2;
+.sidenav:hover + .sidenav_frame_icon {
+  opacity: 0.3;
 }
 
 /* 내비게이션 li */
@@ -92,12 +91,10 @@
 
 .sidenav_frame_icon,
 .sidenav_sns_icon {
+  opacity: 1;
   height: 30px;
   width: 30px;
-}
-
-.sidenav_frame_icon.hover {
-  opacity: 0.3;
+  transition: all 0.5s;
 }
 
 .sidenav_ko {
@@ -135,11 +132,14 @@
 
 .sidenav_sns_frame:hover {
   background-color: #ededeb;
+  transition: all 0.5s;
 }
 
 .sidenav_sns_text {
   font-size: 8px;
 }
+
+/* 오른쪽 콘텐츠 영역 */
 
 .wrapper_content {
   display: flex;
@@ -167,8 +167,6 @@
   display: flex;
   align-items: center;
 }
-
-/* 오른쪽 영역 content */
 
 .wrapper_content_content {
   flex: 1;
@@ -269,4 +267,14 @@
   flex-direction: column;
   width: calc(100vw - 70px);
   /* calc()에서 +, - 기호 사용할 때는 항상 양 옆에 공백이 있어야 함 */
+}
+
+/* 애니메이션 */
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

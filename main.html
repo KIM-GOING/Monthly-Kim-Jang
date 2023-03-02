@@ -1,269 +1,286 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>月間金張</title>
-    <link rel="stylesheet" href="main.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
     <script src="main.js"></script>
 
     <div class="wrapper">
-        <div class="wrapper-monthly">
-            <div class="lmargin"></div>
-            <div class="monthly-name"></div>
-            <div class="flex-monthly-name">
-                <img
-                    class="flex-monthly-gray-name"
-                    src="img_main/monthly_gray_edit.png"
-                    alt="월간"
-                >
-            </div>
-            <div class="flex-monthly-name">
-                <img
-                    id="12"
-                    class="flex-monthly-season-name"
-                    src="img_main/monthly_spring_edit.png"
-                    alt="월간"
-
-                    onmouseover="HoverOn()"
-                    onmouseout="HoverOff()"
-                    onclick="Fade(this.id)"
-                >
-            </div>
-            <div class="monthly-content-gradient1"></div>
-            <div class="monthly-content-gradient2"></div>
-            <div id="february-contents" class="monthly-contents">
-                <div class="column-padding"></div>
-                <div class="monthly-content">2 To be Continue!</div>
-                <a href="detail.html" class="monthly-detail">>>자세히 보기</a>
-            </div>
-            <div id="march-contents" class="monthly-contents">
-                <div class="column-padding"></div>
-                <div class="monthly-content">3 To be Continue!</div>
-                <a href="detail.html" class="monthly-detail">>>자세히 보기</a>
-            </div>
-            <div id="april-contents" class="monthly-contents">
-                <div class="column-padding"></div>
-                <div class="monthly-content">4 To be Continue!</div>
-                <a href="detail.html" class="monthly-detail">>>자세히 보기</a>
-            </div>
-            <div id="may-contents" class="monthly-contents">
-                <div class="column-padding"></div>
-                <div class="monthly-content">5 To be Continue!</div>
-                <a href="detail.html" class="monthly-detail">>>자세히 보기</a>
-            </div>
-            <div id="june-contents" class="monthly-contents">
-                <div class="column-padding"></div>
-                <div class="monthly-content">6 To be Continue!</div>
-                <a href="detail.html" class="monthly-detail">>>자세히 보기</a>
-            </div>
-            <div id="july-contents" class="monthly-contents">
-                <div class="column-padding"></div>
-                <div class="monthly-content">7 To be Continue!</div>
-                <a href="detail.html" class="monthly-detail">>>자세히 보기</a>
-            </div>
-            <div id="august-contents" class="monthly-contents">
-                <div class="column-padding"></div>
-                <div class="monthly-content">8 To be Continue!</div>
-                <a href="detail.html" class="monthly-detail">>>자세히 보기</a>
-            </div>
-            <div id="september-contents" class="monthly-contents">
-                <div class="column-padding"></div>
-                <div class="monthly-content">9 To be Continue!</div>
-                <a href="detail.html" class="monthly-detail">>>자세히 보기</a>
-            </div>
-            <div id="october-contents" class="monthly-contents">
-                <div class="column-padding"></div>
-                <div class="monthly-content">10 To be Continue!</div>
-                <a href="detail.html" class="monthly-detail">>>자세히 보기</a>
-            </div>
-            <div id="november-contents" class="monthly-contents">
-                <div class="column-padding"></div>
-                <div class="monthly-content">11 To be Continue!</div>
-                <a href="detail.html" class="monthly-detail">>>자세히 보기</a>
-            </div>
-            <div id="december-contents" class="monthly-contents">
-                <div class="column-padding"></div>
-                <div class="monthly-content">12 To be Continue!</div>
-                <a href="detail.html" class="monthly-detail">>>자세히 보기</a>
-            </div>
-            <div id="january-contents" class="monthly-contents">
-                <div class="column-padding"></div>
-                <div class="monthly-content">1 To be Continue!</div>
-                <a href="detail.html" class="monthly-detail">>>자세히 보기</a>
-            </div>
-            <div id="monthly-explain-contents" class="monthly-contents">
-                <div class="column-padding"></div>
-                <div class="monthly-content">
-                    월간 프로젝트에 대한 설명입니다
-                </div>
-                <div class="monthly-detail">>>자세히 보기</div>
-            </div>
-            <div id="kimjang-blank-contents" class="monthly-contents">
-                <div class="column-padding"></div>
-                <div class="monthly-content"></div>
-                <div class="monthly-detail"></div>
-            </div>
+      <div class="wrapper-monthly">
+        <div class="lmargin"></div>
+        <div class="monthly-name"></div>
+        <div class="flex-monthly-name">
+          <img
+            class="flex-monthly-gray-name"
+            src="img_main/monthly_gray_edit.png"
+            alt="월간"
+          />
         </div>
-        <div class="wrapper-line">
-            <div class="line">
-                <img src="img_main/sakura.png" alt="blossom" class="blossom"
-                    onmouseover="ZoomIn(event)"
-                    onmouseout="ZoomOut(event)"
-                    id="0" onclick="Fade(this.id)" />
-                <div class="circle"
-                    onmouseover="ZoomInCircle(event)"
-                    onmouseout="ZoomOutCircle(event)"
-                    id="1" onclick="Fade(this.id)">
-                </div>
-                <div class="circle"
-                    onmouseover="ZoomInCircle(event)"
-                    onmouseout="ZoomOutCircle(event)"
-                    id="2" onclick="Fade(this.id)">
-                </div>
-                <div class="circle"
-                    onmouseover="ZoomInCircle(event)"
-                    onmouseout="ZoomOutCircle(event)"
-                    id="3" onclick="Fade(this.id)">
-                </div>
-                <div class="circle"
-                    onmouseover="ZoomInCircle(event)"
-                    onmouseout="ZoomOutCircle(event)"
-                    id="4" onclick="Fade(this.id)">
-                </div>
-                <div class="circle"
-                    onmouseover="ZoomInCircle(event)"
-                    onmouseout="ZoomOutCircle(event)"
-                    id="5" onclick="Fade(this.id)">
-                </div>
-                <div class="circle"
-                    onmouseover="ZoomInCircle(event)"
-                    onmouseout="ZoomOutCircle(event)"
-                    id="6" onclick="Fade(this.id)">
-                </div>
-                <div class="circle"
-                    onmouseover="ZoomInCircle(event)"
-                    onmouseout="ZoomOutCircle(event)"
-                    id="7" onclick="Fade(this.id)">
-                </div>
-                <div class="circle"
-                    onmouseover="ZoomInCircle(event)"
-                    onmouseout="ZoomOutCircle(event)"
-                    id="8" onclick="Fade(this.id)">
-                </div>
-                <div class="circle"
-                    onmouseover="ZoomInCircle(event)"
-                    onmouseout="ZoomOutCircle(event)"
-                    id="9" onclick="Fade(this.id)">
-                </div>
-                <div class="circle"
-                    onmouseover="ZoomInCircle(event)"
-                    onmouseout="ZoomOutCircle(event)"
-                    id="10" onclick="Fade(this.id)">
-                </div>
-                <div class="circle"
-                    onmouseover="ZoomInCircle(event)"
-                    onmouseout="ZoomOutCircle(event)"
-                    id="11" onclick="Fade(this.id)">
-                </div>
-            </div>
+        <div class="flex-monthly-name">
+          <img
+            id="12"
+            class="flex-monthly-season-name"
+            src="img_main/monthly_spring_edit.png"
+            alt="월간"
+            onmouseover="HoverOn()"
+            onmouseout="HoverOff()"
+            onclick="Fade(this.id)"
+          />
         </div>
-        <div class="wrapper-kimjang">
-            <div class="kimjang-content-gradient1"></div>
-            <div class="kimjang-content-gradient2"></div>
-            <div id="february-kimjang-contents" class="kimjang-contents">
-                <div class="kimjang-content">2 To be Continue!</div>
-                <a href="detail.html" class="kimjang-detail">>>자세히 보기</a>
-                <div class="column-padding"></div>
-            </div>
-            <div id="march-kimjang-contents" class="kimjang-contents">
-                <div class="kimjang-content">3 To be Continue!</div>
-                <a href="detail.html" class="kimjang-detail">>>자세히 보기</a>
-                <div class="column-padding"></div>
-            </div>
-            <div id="april-kimjang-contents" class="kimjang-contents">
-                <div class="kimjang-content">4 To be Continue!</div>
-                <a href="detail.html" class="kimjang-detail">>>자세히 보기</a>
-                <div class="column-padding"></div>
-            </div>
-            <div id="may-kimjang-contents" class="kimjang-contents">
-                <div class="kimjang-content">5 To be Continue!</div>
-                <a href="detail.html" class="kimjang-detail">>>자세히 보기</a>
-                <div class="column-padding"></div>
-            </div>
-            <div id="june-kimjang-contents" class="kimjang-contents">
-                <div class="kimjang-content">6 To be Continue!</div>
-                <a href="detail.html" class="kimjang-detail">>>자세히 보기</a>
-                <div class="column-padding"></div>
-            </div>
-            <div id="july-kimjang-contents" class="kimjang-contents">
-                <div class="kimjang-content">7 To be Continue!</div>
-                <a href="detail.html" class="kimjang-detail">>>자세히 보기</a>
-                <div class="column-padding"></div>
-            </div>
-            <div id="august-kimjang-contents" class="kimjang-contents">
-                <div class="kimjang-content">8 To be Continue!</div>
-                <a href="detail.html" class="kimjang-detail">>>자세히 보기</a>
-                <div class="column-padding"></div>
-            </div>
-            <div id="september-kimjang-contents" class="kimjang-contents">
-                <div class="kimjang-content">9 To be Continue!</div>
-                <a href="detail.html" class="kimjang-detail">>>자세히 보기</a>
-                <div class="column-padding"></div>
-            </div>
-            <div id="october-kimjang-contents" class="kimjang-contents">
-                <div class="kimjang-content">10 To be Continue!</div>
-                <a href="detail.html" class="kimjang-detail">>>자세히 보기</a>
-                <div class="column-padding"></div>
-            </div>
-            <div id="november-kimjang-contents" class="kimjang-contents">
-                <div class="kimjang-content">11 To be Continue!</div>
-                <a href="detail.html" class="kimjang-detail">>>자세히 보기</a>
-                <div class="column-padding"></div>
-            </div>
-            <div id="december-kimjang-contents" class="kimjang-contents">
-                <div class="kimjang-content">12 To be Continue!</div>
-                <a href="detail.html" class="kimjang-detail">>>자세히 보기</a>
-                <div class="column-padding"></div>
-            </div>
-            <div id="january-kimjang-contents" class="kimjang-contents">
-                <div class="kimjang-content">1 To be Continue!</div>
-                <a href="detail.html" class="kimjang-detail">>>자세히 보기</a>
-                <div class="column-padding"></div>
-            </div>
-            <div id="monthly-blank-contents" class="kimjang-contents">
-                <div class="kimjang-content"></div>
-                <div class="kimjang-detail"></div>
-                <div class="column-padding"></div>
-            </div>
-            <div id="kimjang-explain-contents" class="kimjang-contents">
-                <div class="kimjang-content">
-                    전체 프로젝트에 대한 설명입니다
-                </div>
-                <div class="kimjang-detail"></div>
-                <div class="column-padding"></div>
-            </div>
-            <div class="kimjang-name">
-                <img
-                    id="13"
-                    class="flex-kimjang-name"
-                    src="img_main/kimjang_gray_edit.png"
-                    alt="김장"
-
-                    onmouseover="this.src='img_main/kimjang_spring_edit.png'"
-                    onmouseout="this.src='img_main/kimjang_gray_edit.png'"
-                    onclick="Fade(this.id)"
-                >
-            </div>
-            <div class="rmargin"></div>
+        <div class="monthly-content-gradient1"></div>
+        <div class="monthly-content-gradient2"></div>
+        <div id="february-contents" class="monthly-contents">
+          <div class="column-padding"></div>
+          <div class="monthly-content">2 To be Continue!</div>
+          <a href="detail.html" class="monthly-detail">>>자세히 보기</a>
         </div>
+        <div id="march-contents" class="monthly-contents">
+          <div class="column-padding"></div>
+          <div class="monthly-content">3 To be Continue!</div>
+          <a href="detail.html" class="monthly-detail">>>자세히 보기</a>
+        </div>
+        <div id="april-contents" class="monthly-contents">
+          <div class="column-padding"></div>
+          <div class="monthly-content">4 To be Continue!</div>
+          <a href="detail.html" class="monthly-detail">>>자세히 보기</a>
+        </div>
+        <div id="may-contents" class="monthly-contents">
+          <div class="column-padding"></div>
+          <div class="monthly-content">5 To be Continue!</div>
+          <a href="detail.html" class="monthly-detail">>>자세히 보기</a>
+        </div>
+        <div id="june-contents" class="monthly-contents">
+          <div class="column-padding"></div>
+          <div class="monthly-content">6 To be Continue!</div>
+          <a href="detail.html" class="monthly-detail">>>자세히 보기</a>
+        </div>
+        <div id="july-contents" class="monthly-contents">
+          <div class="column-padding"></div>
+          <div class="monthly-content">7 To be Continue!</div>
+          <a href="detail.html" class="monthly-detail">>>자세히 보기</a>
+        </div>
+        <div id="august-contents" class="monthly-contents">
+          <div class="column-padding"></div>
+          <div class="monthly-content">8 To be Continue!</div>
+          <a href="detail.html" class="monthly-detail">>>자세히 보기</a>
+        </div>
+        <div id="september-contents" class="monthly-contents">
+          <div class="column-padding"></div>
+          <div class="monthly-content">9 To be Continue!</div>
+          <a href="detail.html" class="monthly-detail">>>자세히 보기</a>
+        </div>
+        <div id="october-contents" class="monthly-contents">
+          <div class="column-padding"></div>
+          <div class="monthly-content">10 To be Continue!</div>
+          <a href="detail.html" class="monthly-detail">>>자세히 보기</a>
+        </div>
+        <div id="november-contents" class="monthly-contents">
+          <div class="column-padding"></div>
+          <div class="monthly-content">11 To be Continue!</div>
+          <a href="detail.html" class="monthly-detail">>>자세히 보기</a>
+        </div>
+        <div id="december-contents" class="monthly-contents">
+          <div class="column-padding"></div>
+          <div class="monthly-content">12 To be Continue!</div>
+          <a href="detail.html" class="monthly-detail">>>자세히 보기</a>
+        </div>
+        <div id="january-contents" class="monthly-contents">
+          <div class="column-padding"></div>
+          <div class="monthly-content">1 To be Continue!</div>
+          <a href="detail.html" class="monthly-detail">>>자세히 보기</a>
+        </div>
+        <div id="monthly-explain-contents" class="monthly-contents">
+          <div class="column-padding"></div>
+          <div class="monthly-content">월간 프로젝트에 대한 설명입니다</div>
+          <div class="monthly-detail">>>자세히 보기</div>
+        </div>
+        <div id="kimjang-blank-contents" class="monthly-contents">
+          <div class="column-padding"></div>
+          <div class="monthly-content"></div>
+          <div class="monthly-detail"></div>
+        </div>
+      </div>
+      <div class="wrapper-line">
+        <div class="line">
+          <img
+            src="img_main/sakura.png"
+            alt="blossom"
+            class="blossom"
+            onmouseover="ZoomIn(event)"
+            onmouseout="ZoomOut(event)"
+            id="0"
+            onclick="Fade(this.id)"
+          />
+          <div
+            class="circle"
+            onmouseover="ZoomInCircle(event)"
+            onmouseout="ZoomOutCircle(event)"
+            id="1"
+            onclick="Fade(this.id)"
+          ></div>
+          <div
+            class="circle"
+            onmouseover="ZoomInCircle(event)"
+            onmouseout="ZoomOutCircle(event)"
+            id="2"
+            onclick="Fade(this.id)"
+          ></div>
+          <div
+            class="circle"
+            onmouseover="ZoomInCircle(event)"
+            onmouseout="ZoomOutCircle(event)"
+            id="3"
+            onclick="Fade(this.id)"
+          ></div>
+          <div
+            class="circle"
+            onmouseover="ZoomInCircle(event)"
+            onmouseout="ZoomOutCircle(event)"
+            id="4"
+            onclick="Fade(this.id)"
+          ></div>
+          <div
+            class="circle"
+            onmouseover="ZoomInCircle(event)"
+            onmouseout="ZoomOutCircle(event)"
+            id="5"
+            onclick="Fade(this.id)"
+          ></div>
+          <div
+            class="circle"
+            onmouseover="ZoomInCircle(event)"
+            onmouseout="ZoomOutCircle(event)"
+            id="6"
+            onclick="Fade(this.id)"
+          ></div>
+          <div
+            class="circle"
+            onmouseover="ZoomInCircle(event)"
+            onmouseout="ZoomOutCircle(event)"
+            id="7"
+            onclick="Fade(this.id)"
+          ></div>
+          <div
+            class="circle"
+            onmouseover="ZoomInCircle(event)"
+            onmouseout="ZoomOutCircle(event)"
+            id="8"
+            onclick="Fade(this.id)"
+          ></div>
+          <div
+            class="circle"
+            onmouseover="ZoomInCircle(event)"
+            onmouseout="ZoomOutCircle(event)"
+            id="9"
+            onclick="Fade(this.id)"
+          ></div>
+          <div
+            class="circle"
+            onmouseover="ZoomInCircle(event)"
+            onmouseout="ZoomOutCircle(event)"
+            id="10"
+            onclick="Fade(this.id)"
+          ></div>
+          <div
+            class="circle"
+            onmouseover="ZoomInCircle(event)"
+            onmouseout="ZoomOutCircle(event)"
+            id="11"
+            onclick="Fade(this.id)"
+          ></div>
+        </div>
+      </div>
+      <div class="wrapper-kimjang">
+        <div class="kimjang-content-gradient1"></div>
+        <div class="kimjang-content-gradient2"></div>
+        <div id="february-kimjang-contents" class="kimjang-contents">
+          <div class="kimjang-content">2 To be Continue!</div>
+          <a href="detail.html" class="kimjang-detail">>>자세히 보기</a>
+          <div class="column-padding"></div>
+        </div>
+        <div id="march-kimjang-contents" class="kimjang-contents">
+          <div class="kimjang-content">3 To be Continue!</div>
+          <a href="detail.html" class="kimjang-detail">>>자세히 보기</a>
+          <div class="column-padding"></div>
+        </div>
+        <div id="april-kimjang-contents" class="kimjang-contents">
+          <div class="kimjang-content">4 To be Continue!</div>
+          <a href="detail.html" class="kimjang-detail">>>자세히 보기</a>
+          <div class="column-padding"></div>
+        </div>
+        <div id="may-kimjang-contents" class="kimjang-contents">
+          <div class="kimjang-content">5 To be Continue!</div>
+          <a href="detail.html" class="kimjang-detail">>>자세히 보기</a>
+          <div class="column-padding"></div>
+        </div>
+        <div id="june-kimjang-contents" class="kimjang-contents">
+          <div class="kimjang-content">6 To be Continue!</div>
+          <a href="detail.html" class="kimjang-detail">>>자세히 보기</a>
+          <div class="column-padding"></div>
+        </div>
+        <div id="july-kimjang-contents" class="kimjang-contents">
+          <div class="kimjang-content">7 To be Continue!</div>
+          <a href="detail.html" class="kimjang-detail">>>자세히 보기</a>
+          <div class="column-padding"></div>
+        </div>
+        <div id="august-kimjang-contents" class="kimjang-contents">
+          <div class="kimjang-content">8 To be Continue!</div>
+          <a href="detail.html" class="kimjang-detail">>>자세히 보기</a>
+          <div class="column-padding"></div>
+        </div>
+        <div id="september-kimjang-contents" class="kimjang-contents">
+          <div class="kimjang-content">9 To be Continue!</div>
+          <a href="detail.html" class="kimjang-detail">>>자세히 보기</a>
+          <div class="column-padding"></div>
+        </div>
+        <div id="october-kimjang-contents" class="kimjang-contents">
+          <div class="kimjang-content">10 To be Continue!</div>
+          <a href="detail.html" class="kimjang-detail">>>자세히 보기</a>
+          <div class="column-padding"></div>
+        </div>
+        <div id="november-kimjang-contents" class="kimjang-contents">
+          <div class="kimjang-content">11 To be Continue!</div>
+          <a href="detail.html" class="kimjang-detail">>>자세히 보기</a>
+          <div class="column-padding"></div>
+        </div>
+        <div id="december-kimjang-contents" class="kimjang-contents">
+          <div class="kimjang-content">12 To be Continue!</div>
+          <a href="detail.html" class="kimjang-detail">>>자세히 보기</a>
+          <div class="column-padding"></div>
+        </div>
+        <div id="january-kimjang-contents" class="kimjang-contents">
+          <div class="kimjang-content">1 To be Continue!</div>
+          <a href="detail.html" class="kimjang-detail">>>자세히 보기</a>
+          <div class="column-padding"></div>
+        </div>
+        <div id="monthly-blank-contents" class="kimjang-contents">
+          <div class="kimjang-content"></div>
+          <div class="kimjang-detail"></div>
+          <div class="column-padding"></div>
+        </div>
+        <div id="kimjang-explain-contents" class="kimjang-contents">
+          <div class="kimjang-content">전체 프로젝트에 대한 설명입니다</div>
+          <div class="kimjang-detail"></div>
+          <div class="column-padding"></div>
+        </div>
+        <div class="kimjang-name">
+          <img
+            id="13"
+            class="flex-kimjang-name"
+            src="img_main/kimjang_gray_edit.png"
+            alt="김장"
+            onmouseover="this.src='img_main/kimjang_spring_edit.png'"
+            onmouseout="this.src='img_main/kimjang_gray_edit.png'"
+            onclick="Fade(this.id)"
+          />
+        </div>
+        <div class="rmargin"></div>
+      </div>
     </div>
-
-    
-
-</body>
+  </body>
 </html>
