@@ -1,3 +1,4 @@
+//내비게이션 접는 함수
 function sideNavFolding() {
   // 전체 내비게이션 영역 width 70px로 줄이기
   const wrapperNav = document.querySelector(".wrapper_nav");
